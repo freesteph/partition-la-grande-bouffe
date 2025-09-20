@@ -9,7 +9,7 @@
 
  date = "1973"
  style = "Film"
- copyright = "Public Domain"
+ copyright = "(c) Philippe Sarde"
 
 
  maintainer = "Stéphane Pierre Maniaci"
@@ -45,24 +45,26 @@ upper = \relative {
 
   \break
 
+  \repeat volta 2 {
+
   \transpose do' do'' \md_theme_un |
 
   \break
 
-  \md_theme_fin
+    \md_theme_fin
 
-  \break
+    \break
 
-  \repeat unfold 2 {
-    r8 fa sol fa mib4 ré |
-    r8 mib fa mib do4 sol |
+    \repeat unfold 2 {
+      r8 fa sol fa mib4 ré |
+      r8 mib fa mib do4 sol |
+    }
+
+    r8 si ré si lab4 fa |
+    r8 si ré si sol4 mib
+
+    \md_theme_fin
   }
-
-  r8 si ré si lab4 fa |
-  r8 si ré si sol4 mib
-
-  \md_theme_fin
-
 }
 
 lower = \relative {
@@ -88,7 +90,7 @@ lower = \relative {
 
   \break
 
-  lab'4 fa mib2
+  lab'4 fa ré2
   do4 mib sol2
 
   \break
