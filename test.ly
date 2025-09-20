@@ -25,13 +25,20 @@ md_theme_un = \relative {
   lab fa8 ré~ ré si ré4
 }
 
+md_theme_fin = \relative {
+  r4 fa'8 lab~ lab si ré4  |
+  do sol8 mib~ mib do mib4 |
+  r ré8 fa~ fa mib ré4     |
+  do1
+}
+
 upper = \relative {
   \clef treble
   \key do \minor
 
   \md_theme_un
 
-  r fa'8 lab~ lab si ré4 |
+  r4 fa'8 lab~ lab si ré4 |
   do sol8 mib~ mib do mib4 |
   r fa8 lab~ lab si ré4 |
   do1
@@ -42,10 +49,20 @@ upper = \relative {
 
   \break
 
-  r4 fa,8 lab~ lab si ré4 |
-  do sol8 mib~ mib do mib4 |
-  r ré8 fa~ fa mib ré4 |
-  do1
+  \md_theme_fin
+
+  \break
+
+  \repeat unfold 2 {
+    r8 fa sol fa mib4 ré |
+    r8 mib fa mib do4 sol |
+  }
+
+  r8 si ré si lab4 fa |
+  r8 si ré si sol4 mib
+
+  \md_theme_fin
+
 }
 
 lower = \relative {
@@ -63,13 +80,30 @@ lower = \relative {
     re sol, |
     do1
   }
+
+  \repeat unfold 2 {
+    ré4 fa sol,2 |
+    do4 mib sol,2
+  }
+
+  \break
+
+  lab'4 fa mib2
+  do4 mib sol2
+
+  \break
+
+  fa sol, |
+  mib' do |
+  re sol, |
+  do1
 }
 
 \score {
   \new PianoStaff <<
     \new Staff = "upper" \upper
     \new Staff = "lower" \lower
- >>
+  >>
 }
 
 \layout {
