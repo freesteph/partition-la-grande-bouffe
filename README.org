@@ -1,4 +1,7 @@
-* partition-la-grande-bouffe
-** Description
-version lilypond de la grande bouffe
-** Result
+* 🍗 partition-la-grande-bouffe
+
+Une exploration de Lilypond en gravant la partition du thème de la
+Grande Bouffe, adaptée de la transcription déjà fournie par Antoine
+Souchav' mais en suivant cette version :
+
+https://www.youtube.com/watch?v=nYUiXQZH7LM
