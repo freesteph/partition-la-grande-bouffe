@@ -1,4 +1,4 @@
-* 🍗 partition-la-grande-bouffe
+# 🍗 partition-la-grande-bouffe
 
 ![La Grande Bouffe - image](https://www.atmospheres53.org/wp-content/uploads/2022/07/La-grande-bouffe-4-1170x700.png)
 
