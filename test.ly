@@ -19,8 +19,8 @@
 }
 
 md_theme_un = \relative {
-  r ré'8 mib~ mib sol sib4 |
-  lab fa8 ré~ ré si sol4   |
+  r ré'8-1 mib~-3 mib sol-1 sib4-3 |
+  lab-2 fa8-1 ré~-3 ré si-2 sol4-1   |
   r ré'8 mib~ mib sol sib4 |
   lab fa8 ré~ ré si ré4
 }
@@ -73,7 +73,7 @@ lower = \relative {
 
   \repeat unfold 2 {
     do2-1 mib-2 |
-    ré-1  sol,-5 |
+    ré-1  sol,-4 |
     do2 mib |
     ré sol,
 
